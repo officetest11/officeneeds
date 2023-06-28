@@ -240,11 +240,17 @@ text-align: center;}
    
 }
 
-
-.nav {
+.nav{margin: 0 auto;}
+.nav1 {
+    position: fixed;
+    top: 2vh;
+    width: 100%;
     
-    margin-top: 2vh;
-}
+
+    z-index: 9999; /* Set a high z-index value to ensure it appears above other elements */
+  }
+  .maincon{margin-top: 10vh;}
+
 }
 
 @media(min-width: 650px){
