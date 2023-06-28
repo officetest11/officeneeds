@@ -12,44 +12,46 @@
 
 <div class="nav">
     <img class="logo" src="logo.png" alt="">
-     <div class="href d-flex align-items-center justify-content-center">
-        <div class="regular"><a class="regular" href="#">shop</a>
-        <a class="regular" href="#">our ventures</a>
+    
+    <div class="href d-flex align-items-center justify-content-center">
+      <div class="regular"><a class="regular" href="#">shop</a>
+        <a class="regular" href="#">retail units</a>
         <a class="regular" href="#">contact</a>
         <a class="regular" href="#">about us</a>
       </div>
-        <div class="dropdown d1">
-          <select class="dropdown db">
-            <option ></option>
-            <option ><a href="#">shop</a></option>
-            <option ><a href="#">our ventures</a></option>
-            <option ><a href="#">contact</a></option>
-            <option ><a href="#">about us</a></option>
-          </select>
-        </div>
+      <div class="dropdown d1">
+        <select class="dropdown db">
+          <option><a href="#">home</a></option>
+          <option><a href="https://officeneed.in/products/">shop</a></option>
+          <option><a href="officeneed.in">our ventures</a></option>
+          <option><a href="https://officeneed.in/contact/">contact</a></option>
+          <option><a href="https://officeneed.in/about-us/">about us</a></option>
+        </select>
+      </div>
     </div>
-</div>
+  </div>
+
 
 <div class="container-fluid maincon">
   <div class="row">
     <div class="col-xxl-6 col-12 col1 ">
      
     <h1>Welcome to <span> <h3>OFFICENEED</h3></span></h1>
-    <h4>one stop shop for all your office needs</h4>
+    <h4> <?php echo $attributes['txt']; ?></h4>
 <button class="button-55 button" role="button">SHOP NOW</button>
 
     </div>
     <div class="col-xxl-6 col-12 col2">
       <div class="carousel">
-        <div class="slide"><img class="simg" src="p1.png" alt=""></div>
-        <div class="slide"><img class="simg" src="p2.png" alt=""></div>
-        <div class="slide"><img class="simg" src="p1.png" alt=""></div>
-        <div class="slide"><img class="simg" src="p2.png" alt=""></div>
-        <div class="slide"><img class="simg" src="p1.png" alt=""></div>
-        <div class="slide"><img class="simg" src="p2.png" alt=""></div>
+        <div class="slide"><img class="simg" src="<?php echo esc_url( $attributes['img1']['url'] ); ?>" alt=""></div>
+        <div class="slide"><img class="simg" src="<?php echo esc_url( $attributes['img2']['url'] ); ?>" alt=""></div>
+        <div class="slide"><img class="simg" src="<?php echo esc_url( $attributes['img3']['url'] ); ?>" alt=""></div>
+        <div class="slide"><img class="simg" src="<?php echo esc_url( $attributes['img4']['url'] ); ?>" alt=""></div>
+        <div class="slide"><img class="simg" src="<?php echo esc_url( $attributes['img5']['url'] ); ?>" alt=""></div>
+        <div class="slide"><img class="simg" src="<?php echo esc_url( $attributes['img6']['url'] ); ?>" alt=""></div>
 
       </div>
-    </div>
+    
   </div>
 </div>
 
